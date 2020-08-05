@@ -1,0 +1,54 @@
+@import './reset.css';
+@import './fonts.css';
+
+:root {
+    --left-panel-color: #F3F4F9;
+    --theme-color: #34ABE0;
+}
+
+.left-panel {
+    width: 246px;
+    height: 100vh;
+    background: var(--left-panel-color);
+} 
+
+.panel-content {
+    /* padding: 40px 0 0 43px; */
+    padding: 40px 0 0 0; 
+}
+
+.left-panel__logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 67px;
+    margin: 43px;
+}
+
+.left-panel__logo img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px 0 0;
+}
+
+.left-panel__list {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.left-panel__item {
+    margin: 0 0 42px 0;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 43px;
+}
+
+.left-panel__item.active {
+    border-left: 3px solid var(--theme-color);
+    padding: 0 0 0 40px;
+}
+
+.left-panel__item a {
+    margin: 0 0 0 14px;
+}
