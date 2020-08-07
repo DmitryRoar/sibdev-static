@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/assets/styles/index.css">
+    <link rel="stylesheet" href="src/assets/styles/media.css">
 </head>
 <body>
     <div class="wrapper">
@@ -15,7 +16,19 @@
                 <div class="left-panel__logo">
                     <img src="src/assets/img/brand.svg" alt="brand">
                     <a href="#">BECO</a>
+
+                    <div class="burger-wrapper">
+                        <div class="burger-background">
+                            <svg width="48" height="106" viewBox="0 0 48 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0C0 11.7415 9.99255 16.1938 20.8591 21.0356C33.809 26.8055 48 33.1285 48 53C48 72.8715 33.809 79.1945 20.8591 84.9644C9.99255 89.8062 0 94.2585 0 106V0Z" fill="#F3F4F9"/>
+                            </svg>
+                            <div class="burger">
+                                <span class="burger__span"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
 
                 <div class="left-panel__list">
                     <ul>
@@ -43,12 +56,11 @@
                 </div>
 
             </div>
-        </div>    
+        </div>  
 
         <div class="right-wrapper">
         
         <div class="search-wrapper">
-            
             <div class="search-content">
                 <div class="search__title">Развлечения</div>
                 <div class="search">
@@ -56,203 +68,85 @@
                     <input type="text" placeholder="Какой магазин вам нужен?">
                 </div>
             </div>
-        </div>
-        <div class="content-wrapper">
-                <div class="card">
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+        </div>  
+        <div class="card-wrapper">
+            <div class="card__container">
+                <div class="card" id="probka">
+                    <h2>пробка на мира</h2>
+                    <h3>Вечер для двоих</h3>
+                    <h1>-50%</h1>
+                    <p>СКИДКА</p>
                 </div>
-                <!-- 2 -->
-                <div class="card">
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="kino">
+                    <h2>кино и немцы</h2>
+                    <h3>Бесплатный бокал аива</h3>
+                    <h1>Варвар</h1>
+                    <p>ПРОМОКОД</p>
                 </div>
-                <!-- 3 -->
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="tort">
+                    <h2>Valery Cakes</h2>
+                    <h3>Торт</h3>
+                    <h1>30%</h1>
+                    <p>СКИДКА</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="sushi">
+                    <h2>sushi sell</h2>
+                    <h3>Набор "Праздник"</h3>
+                    <h1>-45%</h1>
+                    <p>СКИДКА</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="ananas">
+                    <h2>MANGOSTEEN</h2>
+                    <h3>Фрукт в подарок</h3>
+                    <h1>J130</h1>
+                    <p>Купон</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="steak">
+                    <h2>теленок табака</h2>
+                    <h3>Стайк "Мачете"</h3>
+                    <h1>20%</h1>
+                    <p>СКИДКА</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="shaurma">
+                    <h2>fire food</h2>
+                    <h3>Вторая шаурма в подарок</h3>
+                    <h1>Огонь</h1>
+                    <p>промокод</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="icecream">
+                    <h2>aroma cremeria</h2>
+                    <h3>Джелато "Пармезан"</h3>
+                    <h1>20%</h1>
+                    <p>СКИДКА</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card" id="probka">
+                    <h2>пробка на мира</h2>
+                    <h3>Вечер для двоих</h3>
+                    <h1>J130</h1>
+                    <p>КУПОН</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card card__last" id="kino">
+                    <h2>кино и немцы</h2>
+                    <h3>Бесплатный бокал пива</h3>
+                    <h1>варвар</h1>
+                    <p>промокод</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card card__last" id="tort">
+                    <h2>valery cakes</h2>
+                    <h3>Торт</h3>
+                    <h1>30%</h1>
+                    <p>СКИДКА</p>
                 </div>
-                <div class="card">
-                    <!-- <img src="src/assets/img/content/border.svg" alt="hello"> -->
-                    <div class="card-left">
-                        <div class="card-up">
-                            <h1 class="card__title">Пробка на мира</h1>
-                            <p class="card__p">Вечер для двоих</p>
-                        </div>
-                        <div class="card-down">
-                            <p class="card-red">-50%</p>
-                            <p class="card__discount">скидка</p>
-                        </div>
-                    </div>
-                    <div class="card-right">
-                        <img src="src/assets/img/content/cards/probka.svg" alt="probka na mira">
-                    </div>
+                <div class="card card__last" id="sushi">
+                    <h2>sushi sell</h2>
+                    <h3>Набор "Праздник"</h3>
+                    <h1>45%</h1>
+                    <p>СКИДКА</p>
                 </div>
             </div>
         </div>
     </div>
     </div>
+<script src="src/scripts/index.js"></script>
 </body>
 </html>
