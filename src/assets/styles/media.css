@@ -1,3 +1,5 @@
+@import './variables.css';
+
 @media (min-width: 1373px) {
     .card-wrapper {
         justify-content: center;
@@ -5,41 +7,49 @@
 }
 
 @media (max-width: 768px) {
+    .right-wrapper.active {
+        width: calc(100vw - 264px);
+    }
+
+    .right-wrapper.active .search__title {
+        margin: 0 0 33px 0;
+    }
+
+    .right-wrapper.active .card__container {
+        grid-template-columns: 1fr;
+        width: auto;
+        padding: 40px 15px;
+    }
+
+
+
     .left-panel__logo img {
         height: 24px;
         width: 24px;
     }
+
+    .left-panel .left-panel__list .left-panel__item a {
+        display: none
+    }
+
+    .left-panel .left-panel__logo a {
+        display: none
+    }
+
+    .left-panel.active .left-panel__logo a {
+        display: block
+    }
+
+    .left-panel.active {
+        min-width: 264px;
+    }
     
-    .left-panel__logo a {
-        visibility: hidden;
-    }
-
-    .left-panel__item a {
-        opacity: 0;
-    }
-
     .left-panel {
-        width: 104px;
+        min-width: 104px;
     }
 
     .burger-wrapper {
         display: block;
-    }
-
-    .left-panel.active {
-        width: 240px;
-    }
-
-    .left-panel.active .left-panel__logo img {
-        visibility: visible;
-    }
-
-    .left-panel.active a {
-        opacity: 1;
-    }
-
-    .left-panel {
-        width: 104px;
     }
 
     .left-panel.active .burger-wrapper {
@@ -47,7 +57,7 @@
     }
 
     .card__container {
-        width: 632px;
+        width: 630px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -68,25 +78,47 @@
         flex-direction: column;
     }
 
-    .search-wrapper {
-        width: 612px;
+    .burger-wrapper.active {
+        left: 264px;
+    }
+
+    .left-panel.active .left-panel__list .left-panel__item a {
+        display: block
+    }
+
+    .left-panel .left-panel__logo {
+        margin: 0 0 43px 35px;
+    }
+    
+    .left-panel__item {
+        padding: 0 0 0 35px;
+    }
+
+    .left-panel__item.active {
+        border-left: 2px solid var(--theme-color);
     }
 }
 
 @media (max-width: 320px) {
     .search-wrapper {
-        width: 267px;
+        position: relative;
+        width: 100%;
+        min-height: 181px;
     }
 
-    .search {
-        width: 100vw;
-    }
+    .search-content {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        padding: 0;
+    }  
 
-    .left-panel {
+    .left-panel .panel-content {
         display: none;
     }
 
     .left-panel.active {
+        width: 104px;
         display: block;
     }
 
@@ -122,5 +154,39 @@
     .card {
         width: 268px;
         height: 130px;
+    }
+
+    .search__title {
+        text-align: right;
+    }
+
+    .left-panel.active {
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .left-panel.active .panel-content {
+        display: block;
+    }
+
+    .left-panel {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: 3;
+        left: -96px;
+    }
+    
+    .search {
+        width: 125%;
+        position: relative;
+        top: 4px;
+        right: 52px;
+    }
+
+    .search input {
+        font-size: 14px;
     }
 }
