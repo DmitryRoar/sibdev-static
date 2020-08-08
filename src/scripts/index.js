@@ -5,8 +5,10 @@ const burgerWrapper = $('.burger-wrapper')
 
 const burgerBtn = $('.burger')
 const leftPanel = $('.left-panel')
+const searchWrapper = $('.search-wrapper')
 
 const searchTitle = $('.search__title')
+const search = $('.search')
 
 burgerBtn.addEventListener('click', () => {
     burgerBtn.classList.toggle('active')
@@ -15,8 +17,11 @@ burgerBtn.addEventListener('click', () => {
     burgerWrapper.classList.toggle('active')
 })
 
-document.addEventListener('scroll', () => {
-    setTimeout(() => {
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY
+    if (scrolled >= 50) {
         searchTitle.classList.add('hidden')
-    }, 2000)
+        search.classList.add('without-title')
+        searchWrapper.classList.add('without')
+    }
 })

@@ -327,3 +327,22 @@
 .hidden {
     display: none;
 }
+
+.without-title {
+    width: 114% !important;
+    position: relative !important;
+    right: 20px !important;
+    top: 22px !important; 
+}
+
+.without {
+    min-height: 106px !important;
+}
+
+.without-title img {
+    display: none
+}
+
+.without-title input {
+    margin: 0 10px 0 0;
+}
