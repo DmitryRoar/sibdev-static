@@ -17,7 +17,7 @@
 } 
 
 .left-panel {
-    width: 240px;
+    /* width: 240px; */
 }
 
 .left-panel.active {
@@ -75,11 +75,15 @@
 
 .search-wrapper {
     height: 201px;
+    /* width: 100vw; */
+    /* max-width: 1080px; */
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .right-wrapper {
     display: flex;
-    width: calc(100vw - 246px);
+    width: 100%;
+    /* width: calc(100vw - 104px); */
     flex-direction: column;
 }
 
@@ -116,7 +120,6 @@
 
 .card-wrapper {
     display: flex;
-    justify-content: center;
     background: #FAFAFA;
 }
 
@@ -126,11 +129,11 @@
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     padding: 40px 0 0 0;
-    justify-content: space-between;
     align-items: center;
     grid-row-gap: 20px;
     background: #FAFAFA;
     margin-bottom: 100px;
+    margin: 0 auto;
 }
 
 .card {
