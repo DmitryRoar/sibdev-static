@@ -189,4 +189,10 @@
     .search input {
         font-size: 14px;
     }
+
+    .without-title {
+        width: 113% !important;
+        right: 26px !important;
+        top: 24px !important;
+    }
 }

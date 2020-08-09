@@ -329,10 +329,15 @@
 }
 
 .without-title {
-    width: 114% !important;
+    width: 103% !important;
     position: relative !important;
-    right: 20px !important;
-    top: 22px !important; 
+    right: -16px !important;
+    top: 28px !important;
+}
+
+.right-wrapper.active .without-title {
+    right: 0px !important;
+    top: -11px !important;
 }
 
 .without {
